@@ -139,7 +139,7 @@ if(strstr((char *)cb_data.buf,"+IPD") && cb_data.buf[cb_data.length-1] == '\n')
 ```
 - 조건식을 통하여 ESP8266에서만 받은 내용을 실행할 수 있게 작성
 - 다음 데이터를 받기 위해서 버퍼 초기화
-
+------
 ```C
 void esp_event(char * recvBuf)
 
