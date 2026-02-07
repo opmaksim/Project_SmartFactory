@@ -155,7 +155,7 @@ while(pToken != NULL)
 }
 ```
 - 받은 내용을 [@]로 분할하여 배열에 저장
-
+------
 ```C
 else if(!strcmp(pArray[1],"1"))
 {
@@ -181,7 +181,7 @@ else if(!strcmp(pArray[1],"1"))
 ```
 - 수신받은 처리된 데이터를 조건식으로 구성
 - 로봇의 상태와 결과를 나타내는 Buffer를 생성하고 이를 서버에 전송
-
+------
 ```C
 void esp_send_data(char *data)
 {
@@ -196,7 +196,7 @@ void esp_send_data(char *data)
 ```
 - AT Command로 전송하기 위해서 저장된 Buffer를 AT Commend 형식으로 변경
 - Buffer를 ESP8266을 통하여 서버에 전송하 전 전송상태를 확인하는 코드
-
+------
 ```C
 static int esp_at_command(uint8_t *cmd, uint8_t *resp, uint16_t *length, int16_t time_out)
 {
